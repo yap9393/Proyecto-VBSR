@@ -12,6 +12,7 @@
 }
 
 /* Navbar */
+
 .row {
   align-items: center;
 }
@@ -56,7 +57,6 @@ body {
 .sticky-heading {
   position: sticky;
   top: 78px;
-  background-color: #fcd144;
   z-index: 100;
 }
 
@@ -155,28 +155,6 @@ body {
 
 
 /* Divisor de secciones */
-.section-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 3%;
-  margin-left: 5%;
-  margin-right: 5%
-}
-
-@media (max-width: 768px) {
-  .section-container {
-    flex-direction: column;
-  }
-}
-
-.left-text,
-.right-text {
-  flex-basis: 48%;
-}
-
-.location-container .left-text {
-  font-size: medium;
-}
 
 .cita {
   color: #eb1b33;
@@ -230,12 +208,6 @@ body {
 }
 
 /* Footer */
-.pieDePagina {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
 
 .pieDePaginaItem .logo-footer {
   width: 200px;
@@ -265,7 +237,7 @@ body {
 }
 
 @media (max-width: 1000px) {
-  .pieDePagina .item-texto {
+  .item-texto {
     display: none;
   }
 }
@@ -319,9 +291,7 @@ body {
 }
 
 .texto-xxl {
-
   font-size: xx-large;
-
 }
 
 /* Tabla de servicios  */
@@ -342,13 +312,13 @@ body {
   text-align: left;
 }
 
-.precio {
-  text-align: right;
-}
-
-
 /* Galeria */
 
+.galeria{
+  margin-right: 4%;
+  margin-left: 4%;
+ 
+}
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -381,19 +351,21 @@ body {
   .column {
     flex: 100%;
     max-width: 100%;
+    /* margin-right: 5%;
+    margin-left: 5%; */
   }
 }
 
 .galeria a {
   text-decoration: none;
   color: black;
+
 }
 
 /* contacto */
 .schedule-container {
   background-color: #f5f5f5;
   padding: 20px;
-  border-radius: 5px;
 }
 
 .schedule-h3 {
@@ -403,19 +375,14 @@ body {
   font-weight: bold;
 }
 
-.schedule-date {
-  font-size: 20px;
-}
 
-.left-text-container ul {
+
+.no-bullets {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+
 }
 
-.left-text-container li {
-  margin-bottom: 5px;
-}
+
 
 .mapa-contacto {
   margin-top: 2%;
@@ -423,9 +390,9 @@ body {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .mapa-contacto {
-    max-width: 300px;
+    max-width: 350px;
   }
 }
 
