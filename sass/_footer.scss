@@ -1,0 +1,33 @@
+body{
+    .footer {
+        .pieDePaginaItem {
+          width: 200px;
+          margin-top: 1%;
+    
+          .logo-footer {
+            width: 200px;
+          }
+        }
+    
+        .icon-footer {
+          width: 50%;
+          margin: 1%;
+          padding: 0;
+          font-size: 1.5em;
+          text-decoration: none;
+          color: black;
+          font-size: large;
+        }
+    
+        .phone-number-white {
+          @extend .phone-number;
+          color: rgb(255, 255, 255);
+        }
+    
+        @media (max-width: 1000px) {
+          .item-texto {
+            display: none;
+          }
+        }
+      }
+}

@@ -1,0 +1,88 @@
+body {
+    .carouselConteiner {
+        position: relative;
+        z-index: 0;
+
+        .carouselContent {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            text-align: center;
+            color: rgb(255, 255, 255);
+
+            .tituloPpal {
+                font-size: 5em;
+                color: #ffffff;
+                text-shadow: 1px 1px 1px black;
+                font-weight: bold;
+                background-color: rgba(255, 255, 255, 0.5)
+                
+                
+            }
+
+            .subtituloPpal {
+                font-size: 3em;
+                text-shadow: 1px 1px 1px black;
+                background-color: rgba(255, 255, 255, 0.5);
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+            }
+
+            @media ($milcien-width) {
+                .tituloPpal {
+                    font-size: 3em;
+                    color: #ffffff;
+                    text-shadow: 1px 1px 1px black;
+                    font-weight: bold;
+                    background-color: rgba(255, 255, 255, 0.5)
+                }
+
+                .subtituloPpal {
+                    font-size: 2em;
+                    text-shadow: 1px 1px 1px black;
+                    background-color: rgba(255, 255, 255, 0.5);
+                    font-family: 'Times New Roman', Times, serif;
+                    font-style: italic;
+                }
+            }
+
+            @media ($setecientos-width) {
+                .tituloPpal {
+                    font-size: 2.3em;
+                    color: #ffffff;
+                    text-shadow: 1px 1px 1px black;
+                    font-weight: bold;
+                    background-color: rgba(255, 255, 255, 0.5)
+                }
+
+                .subtituloPpal {
+                    font-size: 1.3em;
+                    text-shadow: 1px 1px 1px black;
+                    background-color: rgba(255, 255, 255, 0.5);
+                    font-family: 'Times New Roman', Times, serif;
+                    font-style: italic;
+                }
+            }
+
+            @media ($quinientos-width) {
+                .tituloPpal {
+                    font-size: 1.8em;
+                    color: #ffffff;
+                    text-shadow: 1px 1px 1px black;
+                    font-weight: bold;
+                    background-color: rgba(255, 255, 255, 0.5)
+                }
+
+                .subtituloPpal {
+                    font-size: 1em;
+                    text-shadow: 1px 1px 1px black;
+                    background-color: rgba(255, 255, 255, 0.5);
+                    font-family: 'Times New Roman', Times, serif;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}

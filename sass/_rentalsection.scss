@@ -1,0 +1,39 @@
+body {
+  .rental-cards-conteiner {
+    align-items: center;
+    margin: 5%;
+
+    @media (max-width: 768px) {
+      .rental-cards-conteiner {
+        margin: 13%;
+      }
+    }
+
+    .tarj-rental {
+      .h-100 {
+        height: 600px !important;
+
+        .precioXDia {
+          font-size: 1.4em;
+          color: map-get($colores, rojo);
+
+        }
+
+        .btn-rental {
+          margin-bottom: 5%;
+        }
+
+        .card-image {
+          height: 300px;
+          object-fit: cover;
+        }
+      }
+
+    }
+
+    .pkg-price {
+      color: map-get($colores, rojo);
+      font-size: x-large;
+    }
+  }
+}

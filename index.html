@@ -5,12 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="¡Bienvenido a nuestro sitio de alquileres de ski y snowboard! Aca encontrarás una amplia selección de equipos de alta calidad para disfrutar de tus deportes de invierno favoritos.">
+  <meta name="keywords" content="alquiler de ski, alquiler de snowboard, equipos de ski, equipos de snowboard, deportes de invierno, montaña, nieve, estación de ski, alquiler de esquí, alquiler de tabla de snowboard">
   <title>Vista Bahn Ski Rentals | Inicio</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -32,6 +36,7 @@
     </nav>
   </header>
   <main>
+   
     <nav class="navbar navbar-expand-lg navbar-dark fondoRojo sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
@@ -63,7 +68,8 @@
       </div>
     </nav>
     <!-- carrusel -->
-    <div class="carouselConteiner">
+    <section>
+      <div class="carouselConteiner">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -94,9 +100,11 @@
       </div>
       <div class="carouselContent">
         <h1 class="tituloPpal">SKI RENTAL</h1>
-        <h2 class="subtituloPpal"> Con la calidez de la familia</h2>
+        <h2 class="subtituloPpal "> Con la calidez de la familia</h2>
       </div>
     </div>
+    </section>
+    
     <!-- Seccion Locacion -->
     <section>
       <h2 class="fondoAmarillo sticky-heading">Locación</h2>
@@ -141,9 +149,9 @@
             para que puedas disfrutar de tus aventuras en la montaña con total tranquilidad.</p>
         </div>
       </div>
-      <div class="rental-cards-conteiner">
+      <div class="rental-cards-conteiner tarj-rental">
         <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
+          <div class="col tarj-rental">
             <div class="card h-100">
               <img src="./Assets/imagenes/skierDemo.png" class="card-img-top" alt="esquiador experto">
               <div class="card-body">
@@ -157,7 +165,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col tarj-rental">
             <div class="card h-100">
               <img src="./Assets/imagenes/skierperformance.jpg" class="card-img-top"
                 alt="familia esquiadora intermedia">
@@ -171,7 +179,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col tarj-rental">
             <div class="card h-100">
               <img src="./Assets/imagenes/skiersport.jpg" class="card-img-top" alt="esquiador principiante">
               <div class="card-body">
@@ -194,6 +202,7 @@
       </div>
     </section>
     <img class="imageBanner" src="./Assets/imagenes/demoSkisBanner.jpg" alt=" Esquies apoyados sobre la pared">
+    
     <!-- Seccion Guarderia -->
     <section>
       <h2 class="fondoAmarillo sticky-heading"> Guardería de equipos</h2>
@@ -222,9 +231,8 @@
               guardería</button></a>
         </div>
       </div>
-        </div>
     </section>
-    <img class="imageBanner" src="./Assets/imagenes/skiRack.jpg">
+    <img class="imageBanner" src="./Assets/imagenes/skiRack.jpg" alt="un rack de esquies">
     <!-- Seccion Reparaciones -->
     <section>
       <h2 class="fondoAmarillo sticky-heading">Reparaciones</h2>
@@ -254,32 +262,35 @@
           </div>
         </div>
       </div>
+      <img class="imageBanner" src="./Assets/imagenes/skisTuneShopBanner.jpg" alt="un hombre trabajando en una maquina de esquies">
     </section>
-    <img class="imageBanner" src="./Assets/imagenes/skisTuneShopBanner.jpg">
   </main>
   <!-- Footers -->
-  <footer class="fondoAzul letraClara">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <a class="pieDePaginaItem item-texto phone-number-white" href="tel:+19704762566">(970)-476-2566</a>
-        </div>
-        <div class="col">
-          <img class='pieDePaginaItem logo-footer' src="./Assets/imagenes/logowhiteletters.png"
-      alt="logo completo de vista bahn ski rentals">
-        </div>
-        <div class="col">
-          <p class="pieDePaginaItem item-texto">278 Hanson Ranch Road, Vail, CO</p>
+  <footer class="footer">
+    <div class="fondoAzul letraClara">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <a class="pieDePaginaItem item-texto phone-number-white" href="tel:+19704762566">(970)-476-2566</a>
+            </div>
+            <div class="col">
+              <img class='pieDePaginaItem logo-footer' src="./Assets/imagenes/logowhiteletters.png"
+          alt="logo completo de vista bahn ski rentals">
+            </div>
+            <div class="col">
+              <p class="pieDePaginaItem item-texto">278 Hanson Ranch Road, Vail, CO</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+      <div class="fondoAmarillo">
+        <a class="icon-footer" href="https://www.facebook.com/vailvbsr"><i class="bi bi-facebook "></i></a>
+        <a class="icon-footer" href="(970) 476-2566"><i class="bi bi-whatsapp  "></i></a>
+        <a class="icon-footer" href="(970) 476-2566"><i class="bi bi-telephone-fill "></i></a>
+        <a class="icon-footer" href="https://www.instagram.com/vistabahnskirentals/"><i class="bi bi-instagram "></i></a>
+      </div>
   </footer>
-  <footer class="fondoAmarillo">
-    <a class="icon-footer" href="https://www.facebook.com/vailvbsr"><i class="bi bi-facebook "></i></a>
-    <a class="icon-footer" href="(970) 476-2566"><i class="bi bi-whatsapp  "></i></a>
-    <a class="icon-footer" href="(970) 476-2566"><i class="bi bi-telephone-fill "></i></a>
-    <a class="icon-footer" href="https://www.instagram.com/vistabahnskirentals/"><i class="bi bi-instagram "></i></a>
-  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>

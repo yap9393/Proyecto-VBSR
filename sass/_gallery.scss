@@ -1,0 +1,34 @@
+body {
+    .contenedor-full-galeria {
+        margin-top: 3%;
+        margin-bottom: 3%;
+
+        .galeria {
+            margin-right: 3%;
+            margin-left: 3%;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            .galeria-cont {
+                .h-100 {
+                    height: 420px !important;
+
+                    .card-image {
+                        height: 350px;
+                        object-fit: cover;
+                    }
+
+                    .card-footer {
+                        font-family: 'Dancing Script', cursive;
+                        font-weight: 600;
+                        font-size: x-large;
+                    }
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,27 @@
+body {
+    .phone-number {
+      text-decoration: none;
+      color: black;
+    }
+  
+    .row {
+      align-items: center;
+  
+      .col-item {
+        margin-top: 3%;
+      }
+  
+      .fullLogo {
+        width: 200px;
+      }
+    }
+  
+    @media ($mil-width) {
+      .row {
+        .col-item {
+          display: none;
+        }
+      }
+    }
+    
+}
