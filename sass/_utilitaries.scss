@@ -1,166 +1,164 @@
 @import 'mixins.scss';
+
 body {
-    background-color: #ffffff;
-    font-family: poppins, sans-serif;
-    .imagenLogo {
-      width: 40%
-    }
-  
-    .fondoRojo {
-      background-color: map-get($colores, rojo);
-    }
-  
-    .fondoAzul {
-      background-color: map-get($colores, azul);
-    }
-  
-    .fondoAmarillo {
-      background-color: map-get($colores, amarillo);
-    }
-  
-    .sticky-heading {
-      position: sticky;
-      top: 78px;
-      z-index: 100;
-    }
-  
-    .letraClara {
-      color: #ffffff;
-    }
-  
-    .button-container {
-      margin-top: 1%;
-      margin-bottom: 1%;
-    }
-  
-    .cita {
-      color: map-get($colores, cita);
-      font-size: xx-large;
-    }
-  
-    .citado {
-      font-size: large;
-      color: map-get($colores, cita);
-    }
-  
-    .map {
-      width: 100%;
-      height: 400px;
-    }
-  
-    .imageBanner {
-      width: 100%;
-      height: 400px;
-      object-fit: cover;
-    }
-    .card {
-      @include box-shadow(0, 4px, 8px, rgba(0, 0, 0, 0.1));
-      transition: box-shadow 0.3s ease, transform 0.3s ease;
-  
-      &:hover {
-        @include box-shadow(0, 6px, 12px, rgba(0, 0, 0, 0.2));
-        transform: scale(1.05);
-        z-index: 1;
-      }
-    }
-  
-    .listaAlquiler {
-      margin-top: 20px;
-      list-style-type: none
-    }
-  
-    .imagen-rental-stitch {
-      width: 350px;
-  
-      @media (max-width: 400px) {
-        .imagen-rental-stitch {
-          width: 300px;
-        }
-      }
-    }
-  
-    .texto-justificado {
-      text-align: justify;
-    }
-  
-    .texto-xxl {
-      font-size: xx-large;
-    }
-  
-    .tabla-precios {
-      width: 100%;
-      border-collapse: collapse;
-  
-      tr {
-        border-bottom: 1px solid #ccc;
-      }
-  
-      td {
-        padding: 10px;
-      }
-  
-      .servicio {
-        text-align: left;
-      }
-    }
-  
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 0 4px;
-    }
-  
-    .column {
-      flex: 25%;
-      max-width: 25%;
-      padding: 0 4px;
-  
-      .img {
-        margin-top: 8px;
-        vertical-align: middle;
-        width: 100%;
-      }
-    }
-  
-    @media screen and (max-width: 800px) {
-      .column {
-        flex: 50%;
-        max-width: 50%;
-      }
-    }
-  
-    @media screen and (max-width: 600px) {
-      .column {
-        flex: 100%;
-        max-width: 100%;
-      }
-    }
-  
-    .schedule-container {
-      background-color: #f5f5f5;
-      padding: 20px;
-  
-      .schedule-h3 {
-        color: #333;
-        font-size: 23px;
-        margin-bottom: 10px;
-        font-weight: bold;
-      }
-    }
-  
-    .no-bullets {
-      list-style-type: none;
-    }
-  
-    .mapa-contacto {
-      margin-top: 2%;
-      margin-bottom: 2%;
-    }
-  
-    @media (max-width: 450px) {
-      .mapa-contacto {
-        max-width: 350px;
-      }
-    }
-  
+  background-color: #ffffff;
+  font-family: poppins, sans-serif;
+
+  .imagenLogo {
+    width: 40%
   }
+
+  .fondoRojo {
+    background-color: map-get($colores, rojo);
+  }
+
+  .fondoAzul {
+    background-color: map-get($colores, azul);
+  }
+
+  .fondoAmarillo {
+    background-color: map-get($colores, amarillo);
+  }
+
+  .sticky-heading {
+    position: sticky;
+    top: 78px;
+    z-index: 100;
+  }
+
+  .letraClara {
+    color: #ffffff;
+  }
+
+  .button-container {
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  .cita {
+    color: map-get($colores, cita);
+    font-size: xx-large;
+  }
+
+  .citado {
+    font-size: large;
+    color: map-get($colores, cita);
+  }
+
+  .map {
+    width: 100%;
+    height: 400px;
+  }
+
+  .imageBanner {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .card {
+    @include box-shadow(0, 4px, 8px, rgba(0, 0, 0, 0.1));
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      @include box-shadow(0, 6px, 12px, rgba(0, 0, 0, 0.2));
+      transform: scale(1.05);
+      z-index: 1;
+    }
+  }
+
+  .listaAlquiler {
+    margin-top: 20px;
+    list-style-type: none
+  }
+
+  .imagen-rental-stitch {
+    width: 350px;
+
+    @media ($cuatrocincuenta-width) {
+      width: 300px;
+    }
+  }
+
+  .texto-justificado {
+    text-align: justify;
+  }
+
+  .texto-xxl {
+    font-size: xx-large;
+  }
+
+  .tabla-precios {
+    width: 100%;
+    border-collapse: collapse;
+
+    tr {
+      border-bottom: 1px solid #ccc;
+    }
+
+    td {
+      padding: 10px;
+    }
+
+    .servicio {
+      text-align: left;
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+
+    @media screen and ($ochocientos-width) {
+      flex: 50%;
+      max-width: 50%;
+    }
+
+    @media screen and ($seicientos-width) {
+      flex: 100%;
+      max-width: 100%;
+    }
+
+    .img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+  }
+
+  .schedule-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+
+    .schedule-h3 {
+      color: #333;
+      font-size: 23px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+  }
+
+  .no-bullets {
+    list-style-type: none;
+  }
+
+  .mapa-contacto {
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+    @media ($cuatrocincuenta-width) {
+      max-width: 300px;
+
+    }
+  }
+
+
+
+}

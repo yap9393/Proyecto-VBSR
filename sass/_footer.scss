@@ -24,7 +24,7 @@ body{
           color: rgb(255, 255, 255);
         }
     
-        @media (max-width: 1000px) {
+        @media ($mil-width) {
           .item-texto {
             display: none;
           }

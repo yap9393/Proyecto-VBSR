@@ -3,10 +3,8 @@ body {
     align-items: center;
     margin: 5%;
 
-    @media (max-width: 768px) {
-      .rental-cards-conteiner {
-        margin: 13%;
-      }
+    @media ($setecientos-width) {
+      margin: 13%;
     }
 
     .tarj-rental {

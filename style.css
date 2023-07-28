@@ -67,8 +67,8 @@ body .listaAlquiler {
 body .imagen-rental-stitch {
   width: 350px;
 }
-@media (max-width: 400px) {
-  body .imagen-rental-stitch .imagen-rental-stitch {
+@media (max-width: 450px) {
+  body .imagen-rental-stitch {
     width: 300px;
   }
 }
@@ -101,11 +101,6 @@ body .column {
   max-width: 25%;
   padding: 0 4px;
 }
-body .column .img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
 @media screen and (max-width: 800px) {
   body .column {
     flex: 50%;
@@ -117,6 +112,11 @@ body .column .img {
     flex: 100%;
     max-width: 100%;
   }
+}
+body .column .img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
 body .schedule-container {
   background-color: #f5f5f5;
@@ -137,7 +137,7 @@ body .mapa-contacto {
 }
 @media (max-width: 450px) {
   body .mapa-contacto {
-    max-width: 350px;
+    max-width: 300px;
   }
 }
 
@@ -240,8 +240,8 @@ body .rental-cards-conteiner {
   align-items: center;
   margin: 5%;
 }
-@media (max-width: 768px) {
-  body .rental-cards-conteiner .rental-cards-conteiner {
+@media (max-width: 776px) {
+  body .rental-cards-conteiner {
     margin: 13%;
   }
 }
@@ -283,7 +283,7 @@ body .footer .icon-footer {
 body .footer .phone-number-white {
   color: rgb(255, 255, 255);
 }
-@media (max-width: 1000px) {
+@media (max-width:1000px) {
   body .footer .item-texto {
     display: none;
   }
